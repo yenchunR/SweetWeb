@@ -2,7 +2,7 @@ import Button from '@material-ui/core/Button';
 
 const changeText=(event)=>{
     console.log(event.target)
-    event.target.innerText = event.target.innerText + "被點了了"
+    event.target.innerText = event.target.innerText + "被點點了"
 }
 
 const MultiButton=(num)=>{
