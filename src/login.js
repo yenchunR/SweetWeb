@@ -30,7 +30,6 @@ const styleTitle = {
 const styleBlock = {
     marginTop: '165px',
 }
-
 const Login = () =>{
     return(
         <div style = {styleBack}>
@@ -48,5 +47,4 @@ const Login = () =>{
         </div>
     )
 }
-
 export default Login;

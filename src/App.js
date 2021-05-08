@@ -1,16 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
 import HelloCGU from './cgu_hello';
-import MultiButton from './cgu_multiButton'
+import Login from './login';
+import background from "./Image003.jpeg";
+import GithubProfile from "./github";
+
+const divStyle = {
+  backgroundImage: `url(${background})`,
+  backgroundSize: "cover",
+
+  //width: "1200px",
+  height: "800px",
+  marginTop: "-80px",
+}
 
 function App(){
   return (
     <div className="App">
-      <div>
+      <div style={divStyle}>
         {HelloCGU()}
-      </div>
-      <div>
-        {MultiButton(10)}
+        <div>
+          {GithubProfile()}
+        </div>
       </div>
     </div>
   );
