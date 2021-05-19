@@ -1,5 +1,11 @@
 import Input from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import TodoRun from "./Todo"
+import { BrowserRouter as Router, Route, Switch,Link } from "react-router-dom";
+
+
 
 const styleInput = {
     height: '100px',
@@ -30,21 +36,43 @@ const styleTitle = {
 const styleBlock = {
     marginTop: '165px',
 }
-const Login = () =>{
-    return(
-        <div style = {styleBack}>
-            <div style = {styleBlock} >
-                <h1 style={styleTitle}>Login</h1>
-                <form>
-                    <Input style={styleInput} placeholder="YourEmail@mail.com" 
-                        label="Email" variant="outlined"/>
-                    <Input style={styleInput} type="password" autoComplete="current-password"
-                        placeholder="Input Password" label="Password" variant="outlined"/>
-                    
-                </form>
-                <Button style={styleBtn}>SIGN IN</Button>
-            </div>
-        </div>
-    )
+
+function UserGreeting(props) {   
+    return <h1>Welcome back, CGUER!</h1>; 
+} 
+function GuestGreeting(props) {   
+    return <h1>Hi CGUer, please sign up.</h1>; 
 }
-export default Login;
+function SignButton(props){
+    const isLoggedIn = props.isLoggedIn; return props.isLoggedIn ? <Button style={styleBtn}><Link to="/Todo">Sign</Link></Button> : <GuestGreeting />;
+}
+
+ export default class Login extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    
+    render(){
+        return(
+            <div style = {styleBack}>
+                <div style = {styleBlock} >
+                    <h1 style={styleTitle}>Login</h1>
+                    
+                    <form>
+                        <Input style={styleInput} placeholder="YourEmail@mail.com" 
+                        label="Email" variant="outlined"/>
+                            <br></br>
+                        <Input style={styleInput} type="password" autoComplete="current-password"
+                            placeholder="Input Password" label="Password" variant="outlined"/>  
+                        <br></br> 
+                    </form>
+                    
+                    <SignButton isLoggedIn={true} />
+                    
+                </div>
+            </div>
+        )
+    }
+}
+
+
