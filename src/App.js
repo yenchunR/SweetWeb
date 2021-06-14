@@ -1,18 +1,25 @@
-import Navigation from './Component/Navigation';
-import Masthead from './Component/Masthead';
-import Services from './Component/Services';
-import Portfolio from './Component/Portfolio';
-import About from './Component/About';
-import Sweet from './Component/Sweet'
+import Home from './Component/Home'
 import React, { Component }  from 'react';
-import ListUser from './Component/Connect';
-
+import Comment from './Component/Comment';
+import Team from './Component/Team';
+import { BrowserRouter as Router, Route, Switch,Link } from "react-router-dom";
+import SearchPhoto from './Component/SearchPhoto';
+import SweetShow from './Component/SweetShow';
 
 function App(){
   return (
     <div className="App">
-      
-      <ListUser />
+      <Router>
+        <div>
+          <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/SweetShow" component={SweetShow} />
+              <Route path="/Comment" component={Comment} />
+              <Route path="/SearchPhoto" component={SearchPhoto} />
+              <Route path="/Team" component={Team} />
+          </Switch>
+          </div>
+      </Router>
     </div>
   );
 }

@@ -1,5 +1,5 @@
-
 import React from 'react';
+import './Css/SearchBar.css';
 
 class SearchBar extends React.Component {
     state = { term: '' };
@@ -13,7 +13,11 @@ class SearchBar extends React.Component {
         return (
             <form onSubmit={this.onFormSubmit} className="ui form">
             <div className="field">
-            <input type="text" placeholder="Search for photos on Pexels..." value={this.state.term} onChange={(e) => this.setState({ term: e.target.value})}/>
+                <input 
+                    type="text" 
+                    placeholder="Search for photos on Pexels..." 
+                    value={this.state.term} 
+                    onChange={(e) => this.setState({ term: e.target.value})}/>
             </div>
             </form>
             );

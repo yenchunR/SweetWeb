@@ -69,7 +69,7 @@ class UserGithub extends React.Component{
             <div>
                 <img src={this.state.avataUrl} style={{height:250+'px',marginTop:30+'px',borderRadius: 360+'px',}}></img>
                 <h3 style={styleTitle}>{this.state.userName}</h3>
-                 <ListItem button component="a" href={this.state.githubUrl}>
+                <ListItem button component="a" href={this.state.githubUrl}>
                     <ListItemIcon><GitHubIcon /></ListItemIcon>
                     <ListItemText primary="Github Link" />
                 </ListItem>

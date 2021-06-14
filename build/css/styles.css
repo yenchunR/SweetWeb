@@ -11250,6 +11250,7 @@ header.masthead .masthead-heading {
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
+  justify-content: center;
 }
 .team-member img {
   width: 14rem;
@@ -11260,9 +11261,9 @@ header.masthead .masthead-heading {
   margin-top: 1.5rem;
   margin-bottom: 0;
 }
-
-.img-brand {
-  height: 2.75rem;
+.team-member,
+select:disabled {
+  opacity: 1;
 }
 
 section#contact {
