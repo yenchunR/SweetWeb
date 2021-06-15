@@ -47,7 +47,7 @@ export default class TeamMember extends Component{
                 <div class="container">
                     <div class="text-center">
                         <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                        <h3 class="section-subheading text-muted">The trees, like the longings of the earth, stand atiptoe to peep at the heaven.</h3>
                     </div>
                     <div class="row">
                         <div class="col-lg-4" style={{margin:'0 auto'}}>
@@ -79,7 +79,17 @@ export default class TeamMember extends Component{
                         </div> 
                     </div>
                     <div class="row">
-                        <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                        <div class="col-lg-8 mx-auto text-center">
+                            <h4 class="section-heading text-uppercase">Reference</h4>
+                            <p class="large text-muted">
+                                <h5>React</h5><h5>Django</h5>
+                                <h6>https://startbootstrap.com/previews/agency</h6>
+                                <h6>https://www.pexels.com/</h6>
+                                <h6>https://github.com/emanpicar/sweets-api/blob/master/jsondata/sweets.json</h6>
+                                <h6>https://material-ui.com/zh/components/material-icons/#api</h6>
+                                <h6>https://github.com/andreysaf/react-pexels-search</h6>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

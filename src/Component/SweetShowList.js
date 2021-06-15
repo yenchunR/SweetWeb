@@ -20,7 +20,7 @@ export default class SweetShowList extends React.Component{
     { 
         
         $.each(msg, function(i,item) {
-        var PicNum = getRandomInt(1, 7);
+        var PicNum = getRandomInt(1, 16);
         
         $("#ShowList").html();
         $("#ShowList").append($(
@@ -51,7 +51,7 @@ export default class SweetShowList extends React.Component{
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Portfolio</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                <h3 class="section-subheading text-muted">List the tasty dessert!</h3>
             </div>
             <div class="row" id="ShowList">
                 

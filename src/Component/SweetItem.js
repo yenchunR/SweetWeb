@@ -1,6 +1,5 @@
 import React from 'react';
 import $ from 'jquery'; 
-import Sweet from './Sweet';
 
 const getRandomInt=(min, max) =>{
     min = Math.ceil(min);
@@ -20,7 +19,7 @@ export default class SweetItem extends React.Component{
     data.done( function( msg ) 
     { 
         $.each(msg, function(i,item) {
-            var PicNum = getRandomInt(1, 7);
+            var PicNum = getRandomInt(1, 11);
                 $("#portfolioModal").html();
                 $("#portfolioModal").append($(
                     
@@ -31,7 +30,7 @@ export default class SweetItem extends React.Component{
                                     '<div class="container">'+
                                         '<h2 class="text-uppercase">'+item.name+'</h2>'+
                                         '<p class="item-intro text-muted">'+item.description+'</p>'+
-                                        '<img class="img-fluid d-block mx-auto" src="assets/img/portfolio/s1.jpeg " alt="..." />'+
+                                        '<img class="img-fluid d-block mx-auto" src="assets/img/portfolio/s'+PicNum+'.jpeg " alt="..." />'+
                                         '<p>'+item.story+'</p>'+
                                         '<ul class="list-inline">'+
                                             '<li>'+

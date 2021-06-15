@@ -2,7 +2,7 @@ import Home from './Component/Home'
 import React, { Component }  from 'react';
 import Comment from './Component/Comment';
 import Team from './Component/Team';
-import { BrowserRouter as Router, Route, Switch,Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SearchPhoto from './Component/SearchPhoto';
 import SweetShow from './Component/SweetShow';
 

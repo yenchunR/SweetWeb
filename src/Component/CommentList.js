@@ -70,10 +70,23 @@ export default class CommentList extends React.Component{
       <div class="container">
           <div class="text-center">
               <h2 class="section-heading text-uppercase">CommentList</h2>
-              <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h3 class="section-subheading text-muted">What you want to say ?</h3>
           </div>
           <ul class="timeline" id="CommentLine">
               
+          </ul>
+          <ul class="timeline">
+          <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Be Part
+                                <br />
+                                Of Our
+                                <br />
+                                Story!
+                            </h4>
+                        </div>
+            </li>
           </ul>
 
       </div>
